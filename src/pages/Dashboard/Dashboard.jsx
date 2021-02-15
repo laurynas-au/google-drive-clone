@@ -13,7 +13,7 @@ export default function Dashboard() {
     setError('');
     try {
       await logout();
-      history.pushState('/login' );
+      history.pushState('/login');
     } catch {
       setError('Failed to log out');
     }
