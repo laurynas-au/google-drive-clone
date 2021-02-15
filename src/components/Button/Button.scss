@@ -1,0 +1,48 @@
+.button {
+  background-color: #4d25df;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  margin-top: 1rem;
+  min-height: 5rem;
+  padding: 1rem;
+  font-size: 2rem;
+  
+
+  &:hover, 
+  &:focus {
+    filter: brightness(1.2);
+  }
+  &:active {
+    background-color: #361a9b;
+  }
+  &:disabled {
+    background-color: #535353;
+    color: #cacaca;
+  }
+
+  &--full-width {
+  margin-top: 3rem;
+  width: 100%;
+  }
+
+  &--text {
+    background-color: transparent;
+    color: #4d25df;
+    margin-top: 0;
+
+    &:hover, 
+    &:focus {
+      background-color: transparent;
+      filter: brightness(1.2);
+    }
+    &:active {
+      background-color: transparent;
+      color: #1b0d4e;
+    }
+    &:disabled {
+      background-color: transparent;
+      color: #535353;
+    }
+    }
+}

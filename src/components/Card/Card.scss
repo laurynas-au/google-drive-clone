@@ -1,0 +1,22 @@
+.card {
+  align-items: center;
+  border: 0.2rem solid #f3f3f3;
+  background-color: #FFF;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 60rem;
+  min-width: 30rem;
+  width: 100%;
+
+  &__footer {
+    border-top: 0.1rem solid #cfcfcf;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    width: 80%;
+  }
+}

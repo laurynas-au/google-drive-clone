@@ -1,0 +1,59 @@
+.signup {
+align-items: center;
+display: flex;
+flex-direction: column;
+padding: 2rem;
+width: 100%;
+
+  &__title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__email-label,
+  &__password-label,
+  &__password-conf-label {
+    color: #535353;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  &__email-input,
+  &__password-input,
+  &__password-conf-input {
+    border: 0.1rem solid #cfcfcf;
+    border-radius: 0.5rem;
+    color: #1d1d1d;
+    margin-top: 1rem;
+    min-height: 5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  &__button {
+    background-color: #4d25df;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #fff;
+    margin-top: 3rem;
+    min-height: 5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 100%;
+
+    &:hover, 
+    &:focus {
+      filter: brightness(1.2);
+    }
+    &:active {
+      background-color: #361a9b;
+    }
+  }
+  &__footer {
+    border-top: 0.1rem solid #cfcfcf;
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+}

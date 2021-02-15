@@ -1,0 +1,19 @@
+.alert {
+  border-radius: 0.5rem;
+  background-color: #d3d3d3;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+
+  &--danger {
+    background-color: #b86868;
+    background: linear-gradient(90deg, rgb(255, 79, 35) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+  }
+
+  &--success {
+    background-color: #0ba778;
+    background: linear-gradient(90deg, rgb(0, 155, 121) 0%, rgb(5, 189, 51) 100%);
+    color: white;
+  }
+}
