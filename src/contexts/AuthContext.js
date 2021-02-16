@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { auth } from '../firebase';
 
 const AuthContext = React.createContext();
@@ -60,3 +61,7 @@ useEffect(() => {
     </AuthContext.Provider>
   )
 }
+
+AuthProvider.propTypes = {
+  children: PropTypes.node,
+  }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Button.scss';
 
 const Button = (props) => {
@@ -8,5 +9,13 @@ const Button = (props) => {
       </button>
   )
 }
+
+Button.propTypes = {
+  buttonStyle: PropTypes.oneOf(['', 'full-width', 'text']),
+  disabled: PropTypes.bool,
+  children: PropTypes.node,
+  onClick: PropTypes.func
+  }
+  
 
 export default Button

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.scss';
 
 const Card = (props) => {
@@ -8,5 +9,10 @@ const Card = (props) => {
     </section>
   )
 }
+
+Card.propTypes = {
+  children: PropTypes.node,
+  }
+  
 
 export default Card;
