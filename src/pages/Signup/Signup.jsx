@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import { Alert, Button, Card, CardFooter } from '../../components';
+import { Alert, Button, Card, CardFooter, Container } from '../../components';
 import './Signup.scss';
 
 
@@ -28,6 +28,7 @@ const Signup = () => {
   }
 
   return (
+    <Container type="centered-card">
       <Card>
         <form className="signup">
           <h2 className="signup__title">Sign Up</h2>
@@ -42,6 +43,7 @@ const Signup = () => {
         </form>
         <CardFooter><span>Already have an account? <Link to="/login">Log In</Link></span></CardFooter>
       </Card>
+    </Container>
   )
 }
 

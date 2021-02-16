@@ -1,32 +1,20 @@
-import React, {useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import { Alert, Button, Card, CardFooter } from '../../components';
-import { useAuth } from '../../contexts/AuthContext';
+import React from "react";
+// import PropTypes from 'prop-types';
+import { Container, Navbar } from "../../components";
 
-
-export default function Dashboard() {
-  const [error, setError] = useState('');
-  const { currentUser, logout } = useAuth();
-  const history = useHistory();
-
-  const handleLogOut = async () => { 
-    setError('');
-    try {
-      await logout();
-      history.pushState('/login');
-    } catch {
-      setError('Failed to log out');
-    }
-  };
+const Dashboard = (props) => {
   return (
-    <Card>
-      <h2>Profile</h2>
-      {error && <Alert type="danger">{error}</Alert>}
-      <strong>Email: </strong> {currentUser.email}
-      <Link to="/update-profile"><Button buttonStyle="full-width">Update profile</Button></Link>
-      <CardFooter>
-      <Button buttonStyle="text" onClick={handleLogOut}>Log Out</Button>
-      </CardFooter>
-    </Card>
-  )
-}
+    <>
+      <Navbar />
+      <Container type="content">
+        <h3>Content</h3>
+      </Container>     
+    </>
+  );
+};
+
+// Dashboard.propTypes = {
+
+// }
+
+export default Dashboard;

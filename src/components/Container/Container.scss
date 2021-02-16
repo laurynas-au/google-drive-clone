@@ -1,0 +1,25 @@
+.container {
+  
+  &--full-page {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);;
+    min-height: 100vh;
+    min-width: 32rem;
+    width: 100%;
+  }
+
+  &--centered-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+  }
+
+  &--content {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+}

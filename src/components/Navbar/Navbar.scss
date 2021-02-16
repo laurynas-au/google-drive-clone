@@ -1,0 +1,27 @@
+@import "../../styles/index.scss";
+
+.navbar {
+  align-items: flex-end;
+  background-color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  z-index: 100;
+
+
+  &__logo {
+    color: #840cbb;
+    font-size: 2.6rem;
+    font-weight: $bold;
+    letter-spacing: -0.15rem;
+    text-decoration: none;
+  }
+
+  &__link {
+    color: #535353;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
