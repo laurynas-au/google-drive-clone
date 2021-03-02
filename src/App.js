@@ -6,7 +6,7 @@ import Login from "./pages/Login/Login";
 import UpdateProfile from "./pages/UpdateProfile/UpdateProfile";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import PrivateRoute from "./features/PrivateRoute/PrivateRoute";
 import { Container } from "./components";
 import { AuthProvider } from "./contexts/AuthContext";
 import "./styles/index.scss";

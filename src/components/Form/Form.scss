@@ -1,0 +1,29 @@
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+    &__title {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    &__input-label {
+      color: #535353;
+      font-weight: 600;
+      margin-top: 1rem;
+      width: 100%;
+    }
+    &__input {
+      border: 0.1rem solid #cfcfcf;
+      border-radius: 0.5rem;
+      color: #1d1d1d;
+      margin-top: 1rem;
+      min-height: 5rem;
+      padding: 1rem;
+      font-size: 2rem;
+      width: 100%;
+    }
+  }

@@ -1,6 +1,6 @@
 import React from "react";
-// import PropTypes from 'prop-types';
 import { Container, Navbar } from "../../components";
+import AddFolderButton from "../../features/AddFolderButton/AddFolderButton";
 
 const Dashboard = (props) => {
   return (
@@ -8,13 +8,10 @@ const Dashboard = (props) => {
       <Navbar />
       <Container type="content">
         <h3>Content</h3>
+        <AddFolderButton />
       </Container>     
     </>
   );
 };
-
-// Dashboard.propTypes = {
-
-// }
 
 export default Dashboard;

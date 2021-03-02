@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Button.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import "./Button.scss";
 
 const Button = (props) => {
   return (
@@ -11,7 +11,7 @@ const Button = (props) => {
 }
 
 Button.propTypes = {
-  buttonStyle: PropTypes.oneOf(['', 'full-width', 'text']),
+  buttonStyle: PropTypes.oneOf(["", "full-width", "text",  "controls"]),
   disabled: PropTypes.bool,
   children: PropTypes.node,
   onClick: PropTypes.func
